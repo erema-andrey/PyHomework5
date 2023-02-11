@@ -6,3 +6,22 @@
 
 a = int(input("Введите первое целое число: "))
 b = int(input("Введите второе целое число: "))
+
+
+def a_pow_b(a, b):
+
+    if b == 0:
+        
+       return 1
+    
+    elif b == 1:
+       
+       return a
+    
+    else:
+        
+       return a * a_pow_b(a, b - 1)
+
+
+
+print(a_pow_b(int(input('Введите число: ')), int(input('Введите значение степени: '))))
