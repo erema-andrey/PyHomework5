@@ -4,18 +4,21 @@
 # A = 3; B = 5 -> 243 (3⁵) 
 # A = 2; B = 3 -> 8
 
-a = int(input("Введите первое целое число: "))
-b = int(input("Введите второе целое число: "))
 
-
-def a_pow_b(a, b):
+def a_power_b(a,b):
    
+    
    if b == 0:
       return 1
    elif b == 1:
       return a
    else:
-      return a * a_pow_b(a, b - 1)
+      return a * a_power_b(a, b - 1)
    
-   
-print(a_pow_b(int(input('Введите число: ')), int(input('Введите значение степени: '))))
+y = (a_power_b(int(input('Введите число: ')), int(input('Введите значение степени: ')))) 
+
+print('Результат возводимого числа: ',y,)  
+
+
+
+
